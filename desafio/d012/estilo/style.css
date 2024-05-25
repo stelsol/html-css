@@ -26,7 +26,7 @@ header a, footer a{
     font-weight:bolder ;
 }
 header a:hover, footer a:hover{
-    background-color: ;
+    background-color: black ;
     text-decoration: underline;
 }
 section{
@@ -44,7 +44,7 @@ section.imagem{
 }
 section.imagem > p{
     width: 400px;
-    background-color: rgba(0, 0, 0, 0.267);
+    background-color:rgba(0, 0, 0, 0.267); 
 }
 footer{
     background-color: black;
