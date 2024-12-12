@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+body{
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+#mburguer{
+    background-color:rgb(64, 21, 104) ;
+    width:20vw;
+    text-align: center;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .4s;
+    display: block;
+}
+#mburguer:hover{
+    background-color: whitesmoke;
+    color:rgb(64, 21, 104);
+    
+}
+header,header > nav{
+    flex-flow: column nowrap;
+    
+}
+header > h1{
+    flex-basis: 50px;
+}
+nav > ul > li > a{
+    width: 70vh;
+}
