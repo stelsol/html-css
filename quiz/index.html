@@ -100,11 +100,91 @@
         <!--Questão 8: Imagem -->
         <section>
             <h2>Pergunta 8: Qual linguagem de Programação é representada pelo logotipo abaixo?</h2>
-            
+            <img src="imagens/java.jpg.jpg" alt="logo de uma linguagem de programção">
+            <figcaption>Figura 1: Logotipo de uma linguagem de programação</figcaption>
+            <input type="text" name="pergunta8" id="p8" placeholder="Digite aqui sua resposta...">
+        </section>
+        <!--Tabela de Pontuação-->
+        <section>
+            <h2>Tabela De Pontuação</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Pontuação</th> 
+                        <th>Avaliação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>0-2</td>
+                        <td>
+                         Não desista! cada tentativa é uma oportunidade de você aprender
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3-4</td>
+                        <td>
+                         VocÊ ainda precisa melhorar. Que tal estudar um pouco mais sobre programação?
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5-7</td>
+                        <td>
+                         Bom! Seu conhecimento de programação está satisfatório. Continue estudando!!
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>
+                         Seu conhecimento em Programação está perfeito! Parabens!!
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Boa Sorte na próxima!</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+        <!--Lista de resposta-->
+        <section>
+            <h2>Verifique sua resposta!</h2>
+            <details>
+                <summary>Clique aqui para obter as respostas do quiz</summary>
+                <ol>
+                    <li>HTML</li>
+                    <li>Dominio</li>
+                    <li>Stll*45212ds</li>
+                    <li>1991</li>
+                    <li>Javascript, Java</li>
+                    <li>Arquivo HTML</li>
+                    <li>type</li>
+                    <li>Java</li>
+                </ol>
+            </details>
+        </section>
+        <!--Formulario de Feedback-->
+        <section>
+            <h2>Nos dê o seu feedback</h2>
+            <form>
+                <fieldset>
+                    <legend>Informações de contato</legend>
+                    <label for="name">Nome: </label>
+                    <input type="text" name="name" id="name"> <br>
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email"><br>
+                    <label for="comen">Comentarios: </label><br>
+                    <textarea name="comentarios" id="comen" rows="5" cols="30" placeholder="Digite seus comentarios aqui!"></textarea>
+                    <br>
+                    <input type="button" value="Enviar feedback" onclick="alert('Obrigada pelo seu feedback!')">
+                </fieldset>
+            </form>
         </section>
     </main>
     <footer>
-
+        <P>&copy Quiz de programação. Todos os direitos reservados</P>
+        <p>Para conhecer outros quizzes <a href="pagina2.html" target="_blank">Clique aqui</a></p>
     </footer>
 </body>
 </html>
