@@ -1,0 +1,35 @@
+body{
+    background-color:rgb(198, 199, 199);
+}
+h1{
+    color:#032450;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:40px;
+    text-align: center;
+}
+h2{
+    font-size: 36px;
+    font-style: italic;
+    text-align: center;
+}
+p{
+    font-size: 29px;
+    text-align: justify;
+    text-indent: 50px;
+    background-color:#03245069;
+    text-align: center;
+}
+#cor{
+    background-color: rgba(165, 42, 42, 0.425);
+}
+.perfil{
+    background-color: #e04e0b38;
+    text-decoration: line-through;
+    
+}
+ a{
+    
+    text-decoration: none;
+    background-color: rgb(199, 199, 92);
+    color:black;
+}

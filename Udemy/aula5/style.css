@@ -1,0 +1,43 @@
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+h1{
+    background-color: #c44a4a7e;
+    padding: 10px;
+    
+}
+h2{
+    background-color: #d8c13d7e;
+    margin-top: 50px;   
+}
+p{
+    background-color: #8080807e;
+    margin-top: 0;
+}
+.destaque{
+    background-color: orange;
+}
+.size{
+    width: 50%;
+    height: 100px;
+}
+.padding{
+    padding: 10px;
+}
+.margin{
+    margin: 20px;
+}
+.border{
+    border: 3px solid orangered;
+}
+.outline{
+    outline: 7px solid rgb(109, 109, 40);
+}
+.centralizar {
+    background-color: orange;
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
