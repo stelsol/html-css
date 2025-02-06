@@ -1,7 +1,12 @@
 @charset "UTF-8";
 :root{
     --cor1:#b6afaf;
-    --cor2:#b6afaf9d;
+    --cor2:#a5a4a45b;
+    --cor3:#808080;
+}
+::-webkit-scrollbar{
+    width: 0;
+    height: 0;
 }
 *{
     padding: 0;
@@ -10,34 +15,117 @@
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
 }
-header{
-    text-align: center;
-    background-image: url(imagens/bg-3.jpg);
-    background-size:100%;
-    height: 300px;
-    background-repeat: no-repeat;
+html,body{
+    background-color: var(--cor1);
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
 }
+/*Imagem de fundo - configurações*/
+header{
+    background-image: url(imagens/bg-3.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: right center; /*  Tinha feito assim background-position: center; */
+    height:500px;
+    padding: 1px;
+/*  Ele explicou que para a nav não acabar pondo a margin junto com a imagem, devemos por um padding aqui . assim o nav se apoia no padding */
+}
+/*Cabeçalho configurações*/
+.cabeca{
+    margin: 100px auto 0;
+    width: 80%;
+    text-align: center;
+    /*  Tinha feito assim margin-top: 140px;
+ tinha colocado o text-aligh:center; no header, mas podemos adicionar aqui */
+}
+h1{
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px  black;
+    font-size: 3em;
+    letter-spacing: 2px;
+    
+}
+header p{
+    margin-top: 40px;
+    font-size: 1.3em;
+    color: white;
+    display: inline-block;
+    background-color: #000000b2;
+    padding: 16px;
+    border-bottom: 1px solid white;
+}
+
+/*Menu configurações*/
+
+/* Como eu tinha feito
 .menu{
     text-align: right;
-    margin: 20px;
+    padding: 0px 30px 0px 0px ;
 }
 .menu li{
     display: inline-block;
-    
+    margin:25px 10px 0px 0px;
 }
 .menu a{
-    background-color: aqua;
-    padding: 10px;
+    background-color:var(--cor3);
+    color: white;
+    border: 1px solid white;
+    padding: 10px 20px;
 
 }
-main{
-    background-color: var(--cor1);
-    margin:auto;
+ */
+
+.menu ul{
+    text-align: right;
+    margin: 20px 60px 0 0;
 }
+.menu li{
+    display: inline-block;
+    list-style-type:none;
+    border: 1px solid white;
+    margin-left: 9px;
+}
+.menu a{
+    background-color: var(--cor3);
+    color: white;
+    display: block;
+    padding: 16px;
+    letter-spacing: 2px;
+}
+.menu a:hover{
+    background-color: #00000088;
+}
+/*Corpo configurações*/
 section{
-    
+    margin:auto;
+    width: 95%;
 }
-article{
+.Cursos{
     background-color: white;
-    width: 500px;
+    margin: 10px 0px 20px 0px ;
+    padding: 10px;
+}
+h2{
+    background-color: var(--cor2);
+    padding: 6px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #808080c4;
+}
+.Cursos a {
+    background-color:#80808091;
+    padding: 10px;
+    margin: 10px 0px 4px 0px ;
+    display: inline-block;
+    text-decoration:underline ;
+    border-radius: 4px;
+}
+/*Rodapé - configurações*/
+footer{
+    background-color: var(--cor3);
+    height:50px;
+    text-align: center;
+    color: white;
+    padding: 20px;
 }
