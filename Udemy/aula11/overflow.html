@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fit-content</title>
+    <title>Overflow</title>
 
     <style>
     .container{
         border: 1px solid black;
         padding: 16px;
         width: 360px;
+        height: 300px;
         margin: 10px ;
     }
     .itens{
@@ -28,11 +29,19 @@
     .max-content .itens{
         width: max-content;
     }
-
+    .Overflow-hidden{
+        overflow: hidden;
+    }
+    .overflow-scroll{
+        overflow: scroll;
+    }
+    .overflow-auto{
+        overflow: auto;
+    }
     </style>
 </head>
 <body>
-    <div class="container fit-content">
+    <div class="container fit-content Overflow-hidden">
         <div class="itens">lorem</div>
         <div class="itens">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, sint.</div>
         <div class="itens">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, quia dolore. Quae, temporibus nisi possimus tempora fuga non eligendi ipsam magnam dolores ipsum dolor facere.</div>
@@ -41,7 +50,7 @@
         </div>
     </div>
 
-    <div class="container min-content">
+    <div class="container min-content overflow-scroll">
         <div class="itens">lorem</div>
         <div class="itens">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, sint.</div>
         <div class="itens">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, quia dolore. Quae, temporibus nisi possimus tempora fuga non eligendi ipsam magnam dolores ipsum dolor facere.</div>
@@ -50,7 +59,7 @@
         </div>
     </div>
 
-    <div class="container max-content">
+    <div class="container max-content overflow-auto">
         <div class="itens">lorem</div>
         <div class="itens">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, sint.</div>
         <div class="itens">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, quia dolore. Quae, temporibus nisi possimus tempora fuga non eligendi ipsam magnam dolores ipsum dolor facere.</div>
