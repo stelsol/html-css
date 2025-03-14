@@ -26,15 +26,44 @@
         }
         .flex-container2{
             flex-flow: row wrap;
-            justify-content:center;
-            align-items: center;
+            justify-content:space-around;
+            align-items:center;
             
         }
         .flex-container2 div{
-            width: 100px;
-            height: 100px;
+            width: 50px;
+            height: 50px;
         }
-    </style>
+        
+        .flex-container3{
+            justify-content:flex-end;
+            align-items: flex-start;
+            flex-direction: column-reverse;
+            
+            
+        }
+        .flex-container3 div{
+            background-color: yellow;
+            width: 50px;
+            height: 30px;
+        }
+
+        .flex-container4{
+            justify-content:flex-end;
+            align-items: flex-start;
+            flex-direction: row-reverse;
+            
+            
+        }
+        .flex-container4 div{
+            background-color: rgb(255, 0, 85);
+            width: 50px;
+            height: 50px;
+        }
+        .flex-container4 .div2{
+            flex-basis: 200px;
+        }
+        </style>
 </head>
 <body>
     <div class="flexbox flex-container1">
@@ -43,7 +72,22 @@
         <div class="div3">3</div>
         <div class="div4">4</div>
     </div>
+    <p>Aprendendo sobre Justify content/ Aligh itens e align-content</p>
     <div class="flexbox flex-container2">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+    </div>
+    <p>Aprendendo sobre Cross axis e Main axis</p>
+    <div class="flexbox flex-container3">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+    </div>
+
+    <div class="flexbox flex-container4">
         <div class="div1">1</div>
         <div class="div2">2</div>
         <div class="div3">3</div>
