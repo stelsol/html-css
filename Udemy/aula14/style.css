@@ -6,4 +6,77 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-decoration: none;
     list-style: none;
+    box-sizing: border-box;
 }
+html,body{
+    height: 100vh;
+    width: 100vw;
+    background-color: aqua;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    width: 100vw;
+
+}
+h1{
+    margin: 20px;
+}
+.container1{
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+    text-align: center;
+    gap: 20px;
+}
+.juncao{
+    width: 240px;
+    height: 300px;
+    background-color: white;
+    border: 1px solid black;
+    display:flex;
+    justify-content: space-between; /* empurrou a funcao para baico */
+    position: relative;
+    align-items: center;
+    flex-flow: column nowrap;
+    background-image:url(imagens/thumb02.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    overflow: hidden;
+}
+.foto{
+    border-radius:50%;
+    top: 50%;
+    bottom: 50%;
+    transform: translate(0%,-64%);
+    width: 77px;
+    position: relative;
+    display: flex;
+}
+
+
+.conteudo{
+    display: flex;
+    flex-flow: column;
+    padding-top:70px;
+    font-size: 1.1em;
+}
+.conteudo p{
+    padding: 4px;
+}
+.funcao{
+    display: flex;
+    padding: 15px;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.562);
+    justify-content: space-around;
+    box-shadow: 3px 1px 4px black;
+}
+.funcao img{
+    align-self:flex-end ;
+}
+
