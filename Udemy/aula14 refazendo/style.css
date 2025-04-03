@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;  
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+html{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    /* list-style: none; */
+}
+body{
+    min-height: 100vh; /* Fez o H1 não ficar cortado mais  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(255, 129, 56);
+}
+h1{
+    text-align: center;
+    padding: 20px;
+}
+.container1{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    gap: 20px;
+    max-width: 900px; /* Para a largura do fundo  */
+}
+
+.juncao{
+    flex-basis: 280px;
+    border-radius: 5px 5px 0px 0px ;
+    background-color: white;
+    background-image: url(imagens/thumb02.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.514);
+    text-align: center;
+}
+.foto{
+    margin-top: 50px;
+    display: inline-block;  /* A minha não  centralizou utilizando apenas o text align pois eu coloquei a imagem dentro de outra div e o text só centraliza conteudos inline e a div é um block!  se trocarmos o margin por inline block ela tbm centraliza pois ela se transforma em linha!*/
+    width: 60%;
+    border-radius: 50%;
+}
+.conteudo{
+    margin-top: 10px;
+}
+.conteudo > p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    padding-bottom:5px;
+}
+.funcao{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.158);
+}
+/* main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    
+
+}
+h1{
+    margin: 20px;
+}
+.container1{
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+    text-align: center;
+    gap: 20px;
+}
+.juncao{
+    width: 240px;
+    height: 300px; Usei o basis para criar essa parte 
+    background-color: white;
+    border: 1px solid black;
+    display:flex;
+    justify-content: space-between;  empurrou a funcao para baixo 
+    position: relative;
+    align-items: center;
+    flex-flow: column nowrap;
+    background-image:url(imagens/thumb02.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    overflow: hidden;
+}
+.foto{
+    border-radius:50%;
+    top: 50%;
+    bottom: 50%;
+    transform: translate(0%,-64%);
+    width: 77px;
+    position: relative;
+    display: flex;
+}
+
+
+.conteudo{
+    display: flex;
+    flex-flow: column;
+    padding-top:70px;
+    font-size: 1.1em;
+}
+.conteudo p{
+    padding: 4px;
+}
+.funcao{
+    display: flex;
+    padding: 15px;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.562);
+    justify-content: space-around;
+    box-shadow: 3px 1px 4px black;
+}
+.funcao img{
+    align-self:flex-end ;
+} */
+
