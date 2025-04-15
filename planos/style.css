@@ -1,0 +1,84 @@
+/* Cores a serem uilizadas no projetto
+cor1= #102E50
+cor2= #183B4E
+cor3= #27548A
+cor4= #DDA853
+cor5= #F5EEDC
+*/
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root{  
+    --cor1:#102E50;
+    --cor2:#0c212c;
+    --cor3:#27548A;
+    --cor4:#DDA853;
+    --cor5:#F5EEDC;
+    --font-site:'Montserrat';
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    overflow-x: hidden;
+}
+body,html{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--cor1);
+    color: var(--cor5);
+    font-family:var(--font-site);
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--cor2);
+    padding: 15px;
+    margin: 0 auto;
+    width: 70%;
+}
+.categorias{
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
+a{
+    color: var(--cor5);
+    padding: 10px;
+}
+a:hover{
+    background-color: var(--cor4);
+    color: var(--cor2);
+    border-radius: 5px;
+    font-weight: bold;
+}
+.container{
+    /* background-color: rgb(24, 61, 48); */
+    display: flex;
+    justify-content:baseline;
+    align-items: center;
+    flex-flow: column wrap;
+    margin: 40px;
+}
+.container2{
+    display: flex;
+    margin-top: 20px;
+    gap: 40px;
+}
+.planos{
+    width: 70%;
+    background-color:var(--cor2);
+    padding: 20px;
+    list-style-position: inside;
+    border-radius: 10px;
+}
+.planos h4{
+    border-bottom: 2px solid var(--cor4);
+    margin-bottom: 10px;
+}
+.planos p{
+    font-weight: bold;
+    margin: 10px 10px 10px 0px;
+}
+.planos ul{
+    font-size: 11px;
+}
