@@ -1,3 +1,4 @@
+
 function mudoutamanho(){
 if(window.innerWidth >= 579){
   itens.style.display = 'block'
