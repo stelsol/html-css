@@ -18,7 +18,6 @@ cor5= #F5EEDC
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
 }
 body,html{
     width: 100vw;
@@ -28,6 +27,7 @@ body,html{
     font-family:var(--font-site);
     overflow-x: hidden;
 }
+/* header-style */
 .menu{
     display: flex;
     justify-content: space-between;
@@ -45,17 +45,26 @@ body,html{
     gap: 15px;
     list-style: none;
 }
-a{
-    color: var(--cor5);
+.opcoes{
+    color: white;
     padding: 8px;
     font-weight: bold;
+    text-decoration: none;
     
 }
-a:hover{
-    background-color: var(--cor4);
-    color: var(--cor2);
-    border-radius: 5px;
+.opcoes:hover{
+    text-decoration: underline;
 }
+.active-pag{
+    background-color: var(--cor4);
+    border-radius: 5px;
+    color: var(--cor2);
+    pointer-events: none;
+    font-weight: bold;
+    padding: 8px;
+    text-decoration: none;
+}
+/* Main-style */
 .container{
     /* background-color: rgb(24, 61, 48); */
     display: flex;
@@ -66,22 +75,24 @@ a:hover{
 }
 h1{
     font-size: 3em;
+    text-transform: uppercase;
     margin: 20px;
 }
 .container2{
     display: flex;
     margin-top: 30px;
+    width: 60%;
+    /* border: 1px solid white; */
     gap: 20px;
 }
 .planos{
-    width: 250px;
+    flex:1;
     background-color:#0c212cc1;
     padding: 20px;
     list-style-position: inside;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     border: 1px solid var(--cor4);
 }
 .planos h4{
@@ -92,15 +103,19 @@ h1{
     font-weight: bold;
     margin: 20px 10px 20px 0px;
 }
+.span-price{
+    font-size: 1.4em;
+}
 .planos ul {
     font-size: 11px;
-    
+    margin: 6px;
+    flex: 1;
 }
 .planos li{
     padding-bottom: 9px;
 }
-.tentando{
-    margin-bottom: 30px
+.planos li::marker{
+    color: var(--cor4);
 }
 .planos button{
     width: 100%;
