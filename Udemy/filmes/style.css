@@ -19,6 +19,10 @@ header{
     padding: 0px 100px;
     font-size: 1.2em;
 }
+.menu-logo{
+    font-weight: bolder;
+    font-size: 1.3em;
+}
 .menu-list{
     display: flex;
     gap: 20px;
@@ -26,4 +30,43 @@ header{
 .menu-itens{
     list-style: none;
     
+}
+
+/* //! Body */
+.centralizar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-center{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items:center;
+    padding: 10px;
+}
+.main-titulos{
+    padding: 10px;
+    text-align: center;
+}
+.main-titulos h1{
+    font-size: 1.8em;
+}
+
+.catalogo-filmes{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 20px;
+    gap: 10px;
+}
+.catalogo-part{
+    display: flex;
+    gap: 20px;
+    
+}
+.categoria-filmes{
+    border: 1px solid rgba(0, 0, 0, 0.418);
+    height: 150px;
+    width: 250px
 }
