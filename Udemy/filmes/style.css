@@ -3,10 +3,12 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
 }
 body{
     width: 100vw;
     height: 100vh;
+    background-color: rgb(48, 2, 2);
 }
 header{
     width: 100%;
@@ -16,8 +18,9 @@ header{
     display: flex;
     justify-content:space-between ;
     align-items: center;
-    padding: 0px 100px;
+    padding: 8px 100px;
     font-size: 1.2em;
+    border-bottom: 1px solid white;
 }
 .menu-logo{
     font-weight: bolder;
@@ -56,7 +59,10 @@ header{
 .catalogo-filmes{
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
+    border: 1px solid  rgba(128, 128, 128, 0.199);
+    background-color: rgba(128, 128, 128, 0.322);
+    box-shadow: 1px 2px 10px rgba(99, 97, 97, 0.247);
+    border-radius: 15px;
     padding: 20px;
     gap: 10px;
 }
@@ -65,8 +71,14 @@ header{
     gap: 20px;
     
 }
-.categoria-filmes{
-    border: 1px solid rgba(0, 0, 0, 0.418);
-    height: 150px;
-    width: 250px
+
+.categoria-filmes p {
+    background-color: rgba(0, 0, 0, 0.527);
+    color: white;
+    border-radius: 0px 0px 10px 10px;
+    padding: 3px;
+    text-align: center;
+}
+.cat-img{
+    border-radius: 10px 10px 0px 0px;
 }
