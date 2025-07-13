@@ -1,9 +1,16 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --font-montserrat: 'Montserrat',arial, sans-serif;
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family:var(--font-montserrat);
     color: white;
+    box-sizing: border-box;
 }
 body{
     width: 100vw;
@@ -24,7 +31,7 @@ header{
 }
 .menu-logo{
     font-weight: bolder;
-    font-size: 1.3em;
+    font-size: 1.4em;
 }
 .menu-list{
     display: flex;
@@ -49,7 +56,7 @@ header{
     padding: 10px;
 }
 .main-titulos{
-    padding: 10px;
+    padding: 20px;
     text-align: center;
 }
 .main-titulos h1{
@@ -69,16 +76,42 @@ header{
 .catalogo-part{
     display: flex;
     gap: 20px;
-    
 }
-
+.categoria-filmes{
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+}
 .categoria-filmes p {
     background-color: rgba(0, 0, 0, 0.527);
     color: white;
     border-radius: 0px 0px 10px 10px;
     padding: 3px;
+    width: 100%;
+    height: 20%;
     text-align: center;
+    position: absolute;
+    bottom: 0px;
+}
+.categoria-filmes p:hover{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform:uppercase;
+    font-weight: bolder;
+    font-size: 2em;
 }
 .cat-img{
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 10px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.final-pag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
 }
