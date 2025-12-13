@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     text-align: justify;
+    overflow-x: hidden;
 }
 body{
     width: 100vw;
@@ -43,11 +44,10 @@ img{
     flex-wrap: wrap;
     flex: 1;
 }
-span{
+
+.vid{
     margin: auto;
-    width: 250px;
-    height: 150px;
-    background-color: grey;
+    padding: 10px;
 }
 
 .cont-final{
