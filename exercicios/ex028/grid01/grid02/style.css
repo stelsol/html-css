@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+.container{
+    display: grid;
+    height: 250px;
+    /* grid-template-columns: auto auto auto;
+    grid-template-rows: 100PX 100PX 100PX; */
+    grid-template: 100px 100px 100px / auto auto auto;
+    gap: 10px;
+    /* align-items: stretch;
+    justify-items: stretch;
+    justify-content:start;
+    align-content: center;
+    
+} */
+    place-items: stretch center;
+    place-content: start center;
+    grid-auto-rows: 100PX;
+    grid-auto-columns:100px;
+}
+.itens{
+    border: 2px solid purple;
+    text-align: center;
+}
