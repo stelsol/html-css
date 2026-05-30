@@ -1,2 +1,2 @@
 # html-css
- exercicios desenvolvidos durante o curso de html e css
+Repoitório desenvolvido para aprendizagem HTML - CSS - TailwindCSS - Bootstrap
